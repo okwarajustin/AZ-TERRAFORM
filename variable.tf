@@ -25,9 +25,9 @@ variable "admin_username" {
   default = "adminuser"
 }
 
-variable "admin_ssh_key" {
-  default = "admin-ssh-key-path"
-}
+# variable "admin_ssh_key" {
+#   default = "admin-ssh-key-path"
+# }
 
 variable "address_space" {
   default = ["address-space"]
