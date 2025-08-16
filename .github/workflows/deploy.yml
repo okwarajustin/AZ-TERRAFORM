@@ -20,6 +20,9 @@ jobs:
     - name: install terraform
       uses: hashicorp/setup-terraform@v2
 
+    - name: Show Azure Account
+      run: az account show
+
     - name: Terraform Init
       id: init
       run: terraform init --reconfigure
@@ -35,6 +38,7 @@ jobs:
     - name: Terraform Apply
       id: apply
       run: terraform apply --auto-approve
+
 
 
       
