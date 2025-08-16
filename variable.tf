@@ -7,18 +7,18 @@ variable "rg" {
 }
 
 variable "region" {
-  default = "rg-region"
+  default = "East US"  # e.g., "East US", "West Europe"
 }
 
 variable "location" {
-  default = "vm-location"
+  default = "East US"
 }
 variable "subscription_id" {
   default = "ID of your Azure subscription"
 }
 
 variable "vm_size" {
-  default = "vm-size"
+  default = "Standard_DS1_v2"
 }
 
 variable "admin_username" {
@@ -30,11 +30,11 @@ variable "admin_username" {
 # }
 
 variable "address_space" {
-  default = ["address-space"]
+  default = ["10.0.0.0/16"]  # e.g., ["10.0.0.0/16"]
 }
 
 variable "subnet_prefix" {
-  default = ["subnet-prefix"]
+  default = ["10.0.1.0/24"]
 }
 
 variable "vm_name" {
