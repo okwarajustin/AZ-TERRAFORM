@@ -26,7 +26,7 @@ variable "admin_username" {
 }
 
 variable "admin_ssh_key" {
-  default = "${path.module}/id_rsa.pub"  # Path to the public SSH key
+  description = "Path to the public SSH key"
 }
 
 variable "address_space" {
