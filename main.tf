@@ -44,10 +44,10 @@ resource "azurerm_linux_virtual_machine" "virtual-machine-linux" {
     azurerm_network_interface.net-interface.id
   ]
 
-  # admin_ssh_key {
-  #   username   = var.admin_username
-  #   public_key = file(var.admin_ssh_key)
-  # }
+  admin_ssh_key {
+    username   = var.admin_username
+    public_key = file(var.admin_ssh_key)
+  }
 
   os_disk {
     caching              = "ReadWrite"
