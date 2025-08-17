@@ -26,7 +26,7 @@ variable "admin_username" {
 }
 
 variable "admin_ssh_key" {
-  default = "admin-ssh-key-path"
+  default = "id_rsa.pub"
 }
 
 variable "address_space" {
